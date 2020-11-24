@@ -9,7 +9,6 @@
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *n_node = NULL;
-	/* if parent if null you should start a new tree */
 	if (!parent)
 	{
 		n_node = malloc(sizeof(binary_tree_t));
