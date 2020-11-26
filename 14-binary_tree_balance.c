@@ -16,20 +16,19 @@ int binary_tree_balance(const binary_tree_t *tree)
  * Return: void
  **/
 
-
 size_t binary_tree_height(const binary_tree_t *tree)
-{       
-   if (tree == NULL)  
-       return 0; 
-   else 
-   { 
-       /* compute the depth of each subtree */
-       int lDepth = binary_tree_height(tree->left); 
-       int rDepth = binary_tree_height(tree->right); 
-  
-       /* use the larger one */
-       if (lDepth > rDepth)  
-                return(lDepth+1); 
-       else return(rDepth+1); 
-   } 
+{
+	if (tree == NULL)
+	return (0);
+	else
+	{
+		/* compute the depth of each subtree */
+			int lDepth = binary_tree_height(tree->left);
+			int rDepth = binary_tree_height(tree->right);
+
+		/* use the larger one */
+		if (lDepth > rDepth)
+			return (lDepth + 1);
+		return (rDepth + 1);
+	}
 }
